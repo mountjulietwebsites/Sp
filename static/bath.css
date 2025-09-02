@@ -135,7 +135,7 @@ svg {
     width: 400px;
     height: 100px;
     position: fixed;
-    bottom: 11%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
