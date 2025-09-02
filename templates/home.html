@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartpass</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <p id="mobMes">Hey- this website is meant for chromebooks/laptops. I didn't feel like setting up a whole new mobile interface just for nobody to use it. Go check it out on your chromebook instead. If you like what you see, message mountjulietwebsites@gmail.com and ask for a website, I'll tell you my price. 
+      Have a good day!
+    </p>
+</head>
+<body>
+  <input type="hidden" id = "aBoyUrl" value="{{url_for('a_Boy') }}">
+  <input type="hidden" id = "aGirlUrl" value="{{url_for('a_Girl') }}">
+  <input type="hidden" id = "bBoyUrl" value="{{url_for('b_Boy') }}">
+  <input type="hidden" id = "bGirlUrl" value="{{url_for('b_Girl') }}">
+  <input type="hidden" id = "cBoyUrl" value="{{url_for('c_Boy') }}">
+  <input type="hidden" id = "cGirlUrl" value="{{url_for('c_Girl') }}">
+  <input type="hidden" id = "cteGirlUrl" value="{{url_for('cte_Girl') }}">
+  <input type="hidden" id = "cteBoyUrl" value="{{url_for('cte_Boy') }}">
+  <p id="floorP"></p>
+  <p id="caution">(no information is sent. This info appears at the bottom of the screen)</p>
+  <div class="bDivMain">
+    <button id="Ab">A</button>
+    <button id="Bb">B</button>
+    <button id="Cb">C</button>
+  </div>
+  <div class="bDivMainDrop">
+    <div class="abDiv">
+        <button id="CTEB">CTE Boys</button>
+        <button id="CTEG">CTE Girls</button>
+        <button id="boyA">A Boys</button>
+        <button id="girlA">A Girls</button>
+    </div>
+    <div class="bbDiv">
+        <button id="boyB">Boy</button>
+        <button id="girlB">Girl</button>
+    </div>
+    <div class="cbDiv">
+        <button id="boyC">Boy</button>
+        <button id="girlC">Girl</button>
+    </div>
+  </div>
+  <div id="specificationDiv">
+    <input type = 'text' id="textBox1" placeholder = 'teacher name'>
+    <input type = 'text' id="textBox2" placeholder = '# of times used today'>
+    <input type = 'text' id="textBox3" placeholder = '# of times used this week'>
+    <input type = 'text' id="textBox4" placeholder = '# of times used this month'>
+    </div>
+  <button id="changeB">Continue</button>
+  <div id="timerPDiv"><p id="timerP">The 5 minute timer will start when you hit the next button. After 5 minutes, the screen turns purple- but no information gets sent to anyone. </p></div>
+  <div id="adDiv"><p id="adP1">For cheap websites, message mountjulietwebsites@gmail.com</p><p id="adP2">Custom built, hosted with domain of choice, all for a cheap cost.</p></div>
+
+  <script src = "/static/home.js"></script>
+  <script src= "/static/shared.js"></script>
+</body>
+
+</html>

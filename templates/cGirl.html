@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartpass</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bath.css') }}">
+</head>
+<body>
+  <input type="hidden" id = "homeUrl" value="{{url_for('home') }}">
+  <div id="centerTextDiv">
+    <div id="topTextDiv"><img id = "tp" src="/static/tp.png"><p id = "centerText">C Floor Girls</p></div>
+    <p id="roundTrip">Round-trip</p>
+    <div id="midLine">
+      <div id="line">l</div><p id="comeFrom">from</p><div id="teacher"></div>
+    </div>
+    <div id="fullTimerDiv">
+      <svg id="svgOne" width="200" height="200">
+        <circle cx="100" cy="100" r="90" stroke-width="12" fill="none" class="circle-bg" id="circleBg"/>
+        <circle cx="100" cy="100" r="90" stroke-width="12" fill="none" class="circle-progress" id="circleProgress"/>
+      </svg>
+    </div>
+    <div id="insideCircle">
+    <img id = "guy" src = '/static/guy.png'>
+    <div id="timerDiv">05:00</div>
+    </div>
+    <button id="endPass">End Pass</button>
+  </div>
+  <div id="bottomSection">
+    <div id="squareOne"><div id="today"></div><p id="todayP">today</p></div>
+    <div id="squareTwo"><div id="week"></div><p id="weekP">this week</p></div>
+    <div id="squareThree"><div id="month"></div><p id="monthP">this month</p></div>
+
+
+
+
+  </div>
+  <img id="guy2" src = '/static/guy2.png'>
+  <img id="tp2" src = '/static/tp2.png'>
+  <script src = "/static/bath.js"></script>
+  <script src = "/static/shared.js"></script>
+</body>
+
+</html>

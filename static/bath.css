@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(29, 127, 6);
+}
+p {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+#centerText {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+#centerTextDiv {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    background-color: rgb(44, 203, 0);
+    width: 400px;
+    height: 440px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+#guy {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+#insideCircle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -150px;
+}
+#timerDiv {
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+#tp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#topTextDiv {
+    display: flex;
+    flex-direction: row;
+    margin-left: 16px;
+    gap: 5px;
+}
+
+
+
+
+#roundTrip {
+    color: white;
+    margin-left: 84px;
+    margin-top: -10px;
+}
+#line {
+    background-color: white;
+    color: rgb(44, 203, 0);
+    width: 280px;
+    height: 1px;
+}
+#midLine {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#comeFrom {
+    margin-top: -8px;
+}
+#teacher {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-top: -8px;
+    background-color: rgb(51, 237, 51);
+    height: 20px;
+    width: auto;
+    border-radius: 8px;
+}
+
+svg {
+    transform: rotate(-120deg);
+}
+.circle-bg {
+    stroke: #444;
+    opacity: 0.4;
+
+    
+}
+.circle-progress {
+    stroke: white;
+    transition: 0.5s linear;
+}
+.circle-progress.gray {
+    stroke: gray;
+}
+#fullTimerDiv {
+    display: flex;
+    justify-content: center;
+}
+
+
+#endPass {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 80px;
+    width: 360px;
+    height: 84px;
+    position: fixed;
+    bottom: 4%;
+    left: 5%;
+    border-radius: 10%;
+    background-color: rgb(6, 228, 40);
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+#bottomSection {
+    background-color: white;
+    width: 400px;
+    height: 100px;
+    position: fixed;
+    bottom: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#squareOne, #squareTwo, #squareThree {
+    background-color: rgb(246, 243, 243);
+    height: 70px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+#todayP, #weekP, #monthP {
+    color: rgb(105, 105, 105);
+    display: flex;
+    justify-content: center;
+}
+#today, #week, #month {
+    color: black;
+    display: flex;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: -10px;
+}
+#guy2 {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 55%;
+    border-radius: 50%;
+
+}
+#tp2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    left: 38.5%;
+    top: 8.5%;
+}

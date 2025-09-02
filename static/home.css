@@ -1,0 +1,136 @@
+.mobileMessage {
+    display: none;
+}
+body {
+    background-color: black;
+}
+p {
+    color: white;
+}
+.bDivMain {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+#floorP {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+button {
+    width: 100px;
+    height: 60px;
+    background-color: rgb(29, 127, 6);
+    box-shadow: 2px 2px 2px;
+    font-size: 24px;
+}
+button:hover {
+    opacity: 0.8;
+}
+button:active {
+    opacity: 0.6;
+}
+
+
+.bDivMainDrop {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 6px;
+}
+.bDivMainDrop button, #CTEB, #CTEG {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(44, 203, 0);
+}
+#CTEB, #CTEG{
+    font-size: 16px;
+}
+.abDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.bbDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.cbDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+#timerP {
+    display: flex;
+    justify-content: center;
+    width: 279px;
+    font-size: 20px;
+    text-shadow: .5px .5px .5px;
+}
+#timerPDiv {
+    display: flex;
+    justify-content: center;
+}
+#adP1, #adP2 {
+    display: flex;
+    justify-content: center;
+}
+#adP1 {
+    margin-top: 20px;
+}
+#textDisplay {
+    color: white;
+}
+#specificationDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    width: 380px;
+    position: fixed;
+    right: 38.2%;
+    top: 28%;
+}
+input {
+    height: 24px;
+}
+#changeB {
+    width: 200px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 0;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 38%;
+
+}
+button {
+    cursor: pointer;
+}
+#caution {
+    display: flex;
+    justify-content: center;
+}
+#mobMes {
+    display: none;
+}
+@media (max-width: 600px) {
+    body {
+        display: visible;
+    }
+    #specificationDiv, #floorP, #caution, #changeB, #adP1, #adP2 {
+        display: none;
+    }
+    #mobMes {
+        display: block;
+    }
+
+}
